@@ -15,3 +15,5 @@ Repository for enabling I2S on a NTC GR8. Currently not working, WiP.
 Related discussions:  
 https://bbs.nextthing.co/t/i2s-on-the-chip-pro/15571  
 https://groups.google.com/forum/#!topic/linux-sunxi/6Hl2n1L5ccs
+  
+[![ghit.me](https://ghit.me/badge.svg?repo=hazarkarabay/gr8-i2s)](https://ghit.me/repo/hazarkarabay/gr8-i2s)
