@@ -2,6 +2,9 @@
 Repository for enabling I2S on a NTC GR8. Working with issues noted below. 
 
 ## Steps to play something on a PCM5102A I2S DAC
+
+[![A video!](https://img.youtube.com/vi/JWs2peTOwLI/0.jpg)](https://www.youtube.com/watch?v=JWs2peTOwLI)
+
 Note: This is how I do it. It is likely a good example of how to *not* do things. If you have a better way, send a pull request. 
  
 * Get a Linux machine, we're compiling a kernel. I used Ubuntu on a VM. If you go with VM route, allocate a healthy amount of CPU and RAM to your VM (4 core/16G is what I used).
