@@ -1,0 +1,48 @@
+/dts-v1/;
+/plugin/;
+
+/ {
+	compatible = "nextthing,crumb", "nextthing,gr8";
+	
+	fragment@0 {
+        target = <&i2s0>;
+        __overlay__ {
+            pinctrl-0 = <&i2s0_mclk_pins_a>, <&i2s0_data_pins_a>;
+			status = "okay";
+        };
+    };
+	
+	fragment@1 {
+		target-path = "/";
+
+		__overlay__ {
+			pcm5102a: pcm5102a {
+				compatible = "ti,pcm5102a";
+				#sound-dai-cells = <0>;
+			}; 
+			
+			i2s {
+				compatible = "simple-audio-card";		
+				simple-audio-card,name = "hazar-i2s";
+				simple-audio-card,format = "i2s";
+				simple-audio-card,mclk-fs = <256>;
+				
+				simple-audio-card,cpu {
+					sound-dai = <&i2s0>;
+				};
+
+				simple-audio-card,codec {
+					sound-dai = <&pcm5102a>;
+				};
+			};
+		};
+	};
+	
+	fragment@2 {
+		target-path = "/leds/status";
+
+		__overlay__ {
+			default-state = "off";
+		};
+	};
+};
