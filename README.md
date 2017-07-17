@@ -1,5 +1,5 @@
 # gr8-i2s
-Repository for enabling I2S on a NTC GR8. Working with issues noted below. 
+Repository for enabling I2S on a NTC GR8. ~~Working with issues noted below.~~ Probably is not working again, refer to #1, PR's welcome.
 
 ## Steps to play something on a PCM5102A I2S DAC
 
